@@ -1,0 +1,55 @@
+.featurecards {
+    justify-content: space-evenly;
+    @media (min-width: 1400px) {
+      margin-top: 3em;
+        }
+    .card {
+      display: flex;
+      outline: none;
+      border: none;
+      color: #778895;
+    .card-img-top {
+        height: 230px;
+        background-size: cover;
+        margin-bottom: 0;
+    border-radius: 10px 10px 0  0;
+        background-repeat: no-repeat;
+        @media (min-width: 1400px) {
+          height: 330px;
+            }
+            @media (min-width: 1700px) {
+              height: 380px;
+                }
+        
+      }
+      .cardhead{
+        background: #003F7E;
+        color: #fff;
+      }
+    &:nth-child(1) .card-img-top {
+      background-image: url('./images/chatbotassistant.png');
+      background-position: 50% 50%;
+    }
+    &:nth-child(2) .card-img-top {
+      background-image: url('./images/contract.png');
+      background-position: 50% 50%;
+    }
+    &:nth-child(3) .card-img-top {
+      background-image: url('./images/7fd84e1d-134a-40e5-a071-45aab492e4b3.jpg');
+      background-position: 50% 50%;
+    }
+      img {
+        max-width: 197px;
+      }
+      .card-footer{
+          background: none;
+          border: none;
+          .btn{
+            width: 100%;
+            max-width: 12.5em;
+        }
+      }
+
+      
+    }
+  }

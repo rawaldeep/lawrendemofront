@@ -1,0 +1,160 @@
+.video-react {
+  // position: relative;
+  .video-react-video{ 
+    // width: 100% !important; 
+    height:342px !important; };
+  .video-react-big-play-button{
+    top:calc(50% - 1.5em ) !important;
+    left:calc(50% - 0.75em) !important;
+  }
+
+}
+.videowrapper{
+  // position: relative;
+  height: 342px;
+  overflow: hidden;
+}
+  .cover {
+    // color: #003F7E;
+    background: #003F7E;
+    color: #fff;
+    &::after {
+      background: url('./images/5c03241d74a7d6503005b681_Path\ 5.svg');
+      // background: url('./images/Background-website.png');
+      background-position-x: 25vw;
+      content: "";
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 0 0 35% 35%;
+      // opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -2;
+    }
+    .background{
+      position: absolute;
+      right: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+    }
+    .row {
+      height: 100vh;
+      .header {
+        top: 30vh;
+        padding: 0 2em;
+        .lead {
+            a {
+            margin: 0 0.5em;
+            &:focus{
+              outline: none;
+              
+            }
+          }
+        }
+       
+        .typer{
+            &::after {
+                content: '|';
+                display: inline;
+                -webkit-animation: blink 0.7s infinite;
+                -moz-animation: blink 0.7s infinite;
+                animation: blink 0.7s infinite;
+              }
+        }
+         video {
+            // border-width: 0px;
+            // border-style: solid;
+            // border-color: rgb(0, 0, 0);
+            // box-sizing: content-box;
+            // transform: scale(1.69);
+            // top: 5.6em;
+            // left: 7em;
+            overflow: hidden;
+            // height: 350px;
+            // outline: none;
+            // width: auto;
+            // box-shadow: 0 50px 40px rgba(0, 0, 0, 0.5);
+            clip: auto;
+            &:after {
+              content: '';
+              display: block;
+              position: absolute;
+              left: 12%;
+              bottom: 0px;
+              width: 100%;
+              max-width: 210px;
+              height: 10px;
+              background: transparent;
+              border-radius: 100px/50px;
+              // box-shadow: 0 50px 40px rgba(0, 0, 0, 1);
+            }
+          }
+          @media only screen and (min-width: 1700px) {
+            top:20vh;
+            h1{
+              font-size: 5em;
+            }
+            video {
+              height: 456px;
+              width: 810px;
+            }
+          }
+      }
+    }
+    
+  }
+  /*Removes cursor that comes with typed.js*/
+  .typer-cursor {
+    opacity: 0;
+    display: none;
+  }
+  
+  /*Custom cursor animation*/
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  @-moz-keyframes blink {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }

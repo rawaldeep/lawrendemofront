@@ -1,0 +1,159 @@
+.choiceScreen{
+    position: absolute;
+    width:100vw;
+    height: 100vh;
+    background: #003F7E;
+    .background{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+    }
+  $transition-speed: 20.75s;
+  // background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  $color-1: #fff;
+  $color-2: #fff;
+  $color-3: #fff;
+  $color-4: #fff;
+  $color-5: #fff;
+  
+  // @mixin linear-gradient($lg-deg, $lg-col-1, $lg-col-2, $lg-col-3, $lg-col-4, $lg-col-5) {
+  //     background: $lg-col-1;
+  //     background: -moz-linear-gradient($lg-deg, $lg-col-1 0%, $lg-col-2 25%, $lg-col-3 50%, $lg-col-4 75%, $lg-col-5 100%);
+  //     background: -webkit-linear-gradient($lg-deg, $lg-col-1 0%, $lg-col-2 25%, $lg-col-3 50%, $lg-col-4 75%, $lg-col-5 100%);
+  //     background: linear-gradient($lg-deg, $lg-col-1 0%, $lg-col-2 25%, $lg-col-3 50%, $lg-col-4 75%, $lg-col-5 100%);
+  // }
+  
+  // @keyframes gradientloop {
+  //     0% {
+  //         background-position: 0% 50%
+  //     }
+  //     50% {
+  //         background-position: 100% 50%
+  //     }
+  //     100% {
+  //         background-position: 0% 50%
+  //     }
+  // }
+  
+  .gradientloop {
+      // animation: gradientloop $transition-speed ease infinite;
+      // @include linear-gradient(60deg, $color-1, $color-2, $color-3, $color-4, $color-5);
+      // background-size: 200% 100%/* BECAUSE ANIMATION (W:0% -> W:100% -> W:0%)*/
+      // ;
+      .logo{
+        width: 25%;
+        margin: 0  0 1em 0;
+        @media (max-width: 768px) {
+          width: 100%;
+            }
+      }
+      h4{ color: #666;}
+      .or{
+        color:#003F7E;
+        padding: 4em 0;
+        &::before{
+          content: '|';
+          position: relative;
+          top: -25px;
+          left: 19px;
+        }
+        &::after{
+          content: '|';
+          position: relative;
+          top: 25px;
+          left:-19px;
+        }
+        @media (max-width: 768px) {
+          padding: 0;
+        }
+        
+      }
+      .btn{
+        margin: 2em 1em;
+        font-size: 1.5em;
+        min-width:300px;
+        border-radius: 0;
+        border: 2px solid;
+        outline: none;
+        background-color: transparent;
+        background: #fff;
+        color: #003F7E;
+        border-color: #003F7E;
+        
+        &:hover {
+    background: #003F7E;
+    border-color: #003F7E;
+    color: #fff;
+  }
+      }
+      .btn-arrow {
+        position: relative;
+        transition: background-color 300ms ease-out;
+        &:nth-child(1){
+          min-width: 450px;
+        }
+        &:focus{
+          outline: none;
+        }
+        @media (max-width: 768px) {
+          font-size: 1em;
+          max-width: 50vw;
+          &:nth-child(1){
+            min-width: 0;
+          }
+             }
+        span {
+          display: inline-block;
+          position: relative;
+          transition: all 300ms ease-out;
+          will-change: transform;
+        }
+        &:hover span {
+          -webkit-transform: translate3d(-1.5rem, 0, 0);
+          transform: translate3d(-1.5rem, 0, 0);
+        }
+        svg {
+          position: absolute;
+          width: 1.1em;
+          right: 0px;
+          right: 0rem;
+          opacity: 0;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          transition: all 300ms ease-out;
+          will-change: right, opacity;
+          * {
+            stroke-width: 5;
+          }
+        }
+        &:hover svg {
+          opacity: 1;
+          right: -4rem;
+        }
+      }
+  }
+  
+  
+  .do-not-include {
+      border-radius: 0px 20px 20px 0px;
+      font-size: 24px;
+      min-height: 80vh;
+      width: 100%;
+      padding: 2.45em 0;
+      margin-top: 2em;
+      position: relative
+  }
+  .container{
+    .langswitcher{
+      .btn{
+        z-index: 2;
+        &:hover{
+cursor: pointer;
+        }
+      }
+    }
+  }
+  }

@@ -1,0 +1,26 @@
+.usecaseoverview{
+    padding: 2em 0;
+    .blogoverview .item-box-blog {
+        padding: 1em 0;
+        border: none;
+        border-bottom: 1px dashed ;
+    }
+    .imgcont{
+        img{
+        width: 100%;
+        }
+    }
+}
+
+.usecases{
+    color: #fff;
+    background: #003F7E;
+    min-height: 50vh;
+    border-bottom: 5px solid #fff;
+    padding: 0 0 3em 0;
+    .innerPageImage{
+        img{
+            width: 100%;
+        }
+    }
+}
